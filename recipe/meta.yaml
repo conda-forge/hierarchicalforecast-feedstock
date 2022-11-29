@@ -25,6 +25,8 @@ requirements:
     - pandas
     - scikit-learn
     - quadprog
+    - packaging
+    - statsmodels
 
 test:
   imports:
