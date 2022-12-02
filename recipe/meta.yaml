@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -22,10 +22,10 @@ requirements:
     - python >=3.7
     - numba
     - numpy
-    - packaging
     - pandas
-    - pip
     - scikit-learn
+    - quadprog
+    - packaging
     - statsmodels
 
 test:
@@ -39,7 +39,7 @@ test:
 about:
   home: https://github.com/Nixtla/hierarchicalforecast/tree/main/
   summary: Hierarchical Methods Time series forecasting
-  license: MIT
+  license: Apache-2.0
   license_file: LICENSE
   description: |
     **HierarchicalForecast** offers a collection of reconciliation methods, 
@@ -67,3 +67,4 @@ about:
 extra:
   recipe-maintainers:
     - sugatoray
+    - FedericoGarza
