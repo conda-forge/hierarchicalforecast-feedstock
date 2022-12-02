@@ -3,7 +3,7 @@ About hierarchicalforecast
 
 Home: https://github.com/Nixtla/hierarchicalforecast/tree/main/
 
-Package license: MIT
+Package license: Apache-2.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hierarchicalforecast-feedstock/blob/main/LICENSE.txt)
 
@@ -166,5 +166,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@FedericoGarza](https://github.com/FedericoGarza/)
 * [@sugatoray](https://github.com/sugatoray/)
 
