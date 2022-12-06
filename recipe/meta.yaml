@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 2
 
 requirements:
   host:
@@ -27,6 +27,7 @@ requirements:
     - quadprog
     - packaging
     - statsmodels
+    - matplotlib-base
 
 test:
   imports:
