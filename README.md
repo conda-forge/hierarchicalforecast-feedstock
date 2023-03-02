@@ -1,11 +1,11 @@
-About hierarchicalforecast
-==========================
+About hierarchicalforecast-feedstock
+====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hierarchicalforecast-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Nixtla/hierarchicalforecast/tree/main/
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hierarchicalforecast-feedstock/blob/main/LICENSE.txt)
 
 Summary: Hierarchical Methods Time series forecasting
 
