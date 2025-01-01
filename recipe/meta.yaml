@@ -1,5 +1,5 @@
 {% set name = "hierarchicalforecast" %}
-{% set version = "0.4.1" %}
+{% set version = "0.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hierarchicalforecast-{{ version }}.tar.gz
-  sha256: 6add2a50f3536a7df045e28c366e72b8c71b5782cd477a95ad9f9821be886cc3
+  sha256: 8c9f5ff5d935cac62d9e0f09a8bb6899e38557cc77e6912f41db409c1bab8093
 
 build:
   noarch: python
@@ -17,16 +17,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
   run:
-    - python >=3.7
+    - python >=3.8
     - numba
-    - numpy <1.24
+    - numpy
     - pandas
     - scikit-learn
     - quadprog
-    - packaging
-    - statsmodels
     - matplotlib-base
     - tqdm
 
