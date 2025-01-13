@@ -17,6 +17,7 @@ Documentation: https://nixtla.github.io/hierarchicalforecast/
 including `BottomUp`, `TopDown`, `MiddleOut`, `MinTrace` and `ERM`.
 
 
+
 * Classic reconciliation methods:
     - `BottomUp`: Simple addition to the upper levels.
     - `TopDown`: Distributes the top levels forecasts trough the hierarchies.
@@ -166,6 +167,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@FedericoGarza](https://github.com/FedericoGarza/)
+* [@AzulGarza](https://github.com/AzulGarza/)
+* [@jmoralez](https://github.com/jmoralez/)
 * [@sugatoray](https://github.com/sugatoray/)
 
