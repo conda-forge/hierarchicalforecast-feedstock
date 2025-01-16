@@ -21,12 +21,13 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
+    - intel-cmplr-lib-rt
+    - matplotlib-base
     - numba
     - numpy
     - pandas
-    - scikit-learn
     - quadprog
-    - matplotlib-base
+    - scikit-learn
     - tqdm
 
 test:
