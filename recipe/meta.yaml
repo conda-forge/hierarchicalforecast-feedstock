@@ -26,8 +26,6 @@ requirements:
     - pandas
     - scikit-learn
     - quadprog
-    - packaging
-    - statsmodels
     - matplotlib-base
     - tqdm
 
