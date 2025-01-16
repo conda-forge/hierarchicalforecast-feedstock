@@ -22,7 +22,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - numba
-    - numpy <1.24
+    - numpy
     - pandas
     - scikit-learn
     - quadprog
