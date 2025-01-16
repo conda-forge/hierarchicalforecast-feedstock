@@ -7,17 +7,18 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hierarchicalforecast-{{ version }}.tar.gz
-  sha256: 6add2a50f3536a7df045e28c366e72b8c71b5782cd477a95ad9f9821be886cc3
+  sha256: 8c9f5ff5d935cac62d9e0f09a8bb6899e38557cc77e6912f41db409c1bab8093
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
     - pip
     - python {{ python_min }}
+    - setuptools
   run:
     - python >={{ python_min }}
     - numba
