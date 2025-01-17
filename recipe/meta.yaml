@@ -21,9 +21,9 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - intel-cmplr-lib-rt
     - matplotlib-base
     - numba
+    - intel-cmplr-lib-rt
     - numpy
     - pandas
     - quadprog
@@ -37,6 +37,7 @@ test:
     - pip check
   requires:
     - pip
+    - intel-cmplr-lib-rt
 
 about:
   home: https://github.com/Nixtla/hierarchicalforecast/tree/main/
