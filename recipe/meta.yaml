@@ -35,7 +35,7 @@ test:
     - hierarchicalforecast
   commands:
     - pip list
-    - conda activate _test_env
+    - pip install intel-cmplr-lib-rt
     - pip check
   requires:
     - pip
