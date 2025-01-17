@@ -16,8 +16,8 @@ build:
 
 requirements:
   host:
-    - pip
     - python {{ python_min }}
+    - pip
     - setuptools
   run:
     - python >={{ python_min }}
@@ -35,9 +35,9 @@ test:
     - hierarchicalforecast
   commands:
     - pip list
-    - pip install intel-cmplr-lib-rt
     - pip check
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
