@@ -23,7 +23,6 @@ requirements:
     - python >={{ python_min }}
     - matplotlib-base
     - numba
-    - intel-cmplr-lib-rt
     - numpy
     - pandas
     - quadprog
