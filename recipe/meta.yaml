@@ -34,7 +34,8 @@ test:
   imports:
     - hierarchicalforecast
   commands:
-    - python -m pip check
+    - pip install intel-cmplr-lib-rt
+    - pip check
   requires:
     - python {{ python_min }}
     - pip
