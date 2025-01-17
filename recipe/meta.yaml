@@ -18,7 +18,6 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
-    - intel-cmplr-lib-rt
     - setuptools
   run:
     - python >={{ python_min }}
@@ -35,12 +34,11 @@ test:
   imports:
     - hierarchicalforecast
   commands:
-    - conda activate _test_env
     - pip list
+    - conda activate _test_env
     - pip check
   requires:
     - pip
-    - python {{ python_min }}
 
 about:
   home: https://github.com/Nixtla/hierarchicalforecast/tree/main/
