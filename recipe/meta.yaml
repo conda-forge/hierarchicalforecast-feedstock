@@ -23,7 +23,7 @@ requirements:
     - python >={{ python_min }}
     - matplotlib-base
     - numba
-    - intel-cmplr-lib-rt
+    - intel-cmplr-lib-rt # [linux-64 or win-64]
     - numpy
     - pandas
     - quadprog
@@ -34,8 +34,7 @@ test:
   imports:
     - hierarchicalforecast
   commands:
-    - pip install intel-cmplr-lib-rt
-    - pip check
+    - pip list
   requires:
     - python {{ python_min }}
     - pip
