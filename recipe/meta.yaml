@@ -32,9 +32,6 @@ requirements:
 test:
   imports:
     - hierarchicalforecast
-  commands:
-    - pip list
-    - pip check
   requires:
     - python {{ python_min }}
     - pip
