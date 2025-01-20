@@ -168,6 +168,7 @@ Feedstock Maintainers
 =====================
 
 * [@AzulGarza](https://github.com/AzulGarza/)
+* [@elephaint](https://github.com/elephaint/)
 * [@jmoralez](https://github.com/jmoralez/)
 * [@sugatoray](https://github.com/sugatoray/)
 

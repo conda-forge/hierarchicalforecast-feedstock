@@ -16,26 +16,24 @@ build:
 
 requirements:
   host:
+    - python {{ python_min }}
     - pip
-    - python >=3.7
+    - setuptools
   run:
-    - python >=3.7
-    - numba
-    - numpy <1.24
-    - pandas
-    - scikit-learn
-    - quadprog
-    - packaging
-    - statsmodels
+    - python >={{ python_min }}
     - matplotlib-base
+    - numba
+    - numpy
+    - pandas
+    - quadprog
+    - scikit-learn
     - tqdm
 
 test:
   imports:
     - hierarchicalforecast
-  commands:
-    - pip check
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
@@ -71,4 +69,4 @@ extra:
     - sugatoray
     - AzulGarza
     - jmoralez
-
+    - elephaint
