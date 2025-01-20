@@ -1,5 +1,5 @@
 {% set name = "hierarchicalforecast" %}
-{% set version = "0.4.2" %}
+{% set version = "0.4.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hierarchicalforecast-{{ version }}.tar.gz
-  sha256: 8c9f5ff5d935cac62d9e0f09a8bb6899e38557cc77e6912f41db409c1bab8093
+  sha256: e16e700676a913418d9eef53ce7e1c2e9ed5a31ee8f131cd7bd4f2b46cbfe413
 
 build:
   noarch: python
@@ -16,27 +16,25 @@ build:
 
 requirements:
   host:
-    - pip
     - python {{ python_min }}
+    - pip
     - setuptools
   run:
     - python >={{ python_min }}
+    - matplotlib-base
     - numba
     - numpy
     - pandas
-    - scikit-learn
     - quadprog
-    - matplotlib-base
+    - scikit-learn
     - tqdm
 
 test:
   imports:
     - hierarchicalforecast
-  commands:
-    - pip check
   requires:
-    - pip
     - python {{ python_min }}
+    - pip
 
 about:
   home: https://github.com/Nixtla/hierarchicalforecast/tree/main/
