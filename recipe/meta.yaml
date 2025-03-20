@@ -1,5 +1,5 @@
 {% set name = "hierarchicalforecast" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hierarchicalforecast-{{ version }}.tar.gz
-  sha256: 28dd9ceca43979937c5deca66fea931baf7166b12b1df536ccd95ca7bf14f475
+  sha256: c9ba1ea528a29bf80a2ca0a9f08243a32b564d0b992d4c2bf049e251ee4695be
 
 build:
   noarch: python
