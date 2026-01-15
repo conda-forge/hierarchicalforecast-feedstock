@@ -15,7 +15,7 @@ build:
   noarch: python
   script:
     - curl -sL https://raw.githubusercontent.com/Nixtla/hierarchicalforecast/v{{ version }}/LICENSE -o LICENSE || wget https://raw.githubusercontent.com/Nixtla/hierarchicalforecast/v{{ version }}/LICENSE -O LICENSE
-    - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+    - {{ PYTHON }} -m pip install".[clarabel]" -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
@@ -30,7 +30,7 @@ requirements:
     - numba
     - numpy
     - pandas
-    - qpsolvers[clarabel]
+    - qpsolvers
     - scikit-learn
     - tqdm
 
