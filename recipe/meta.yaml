@@ -8,6 +8,8 @@ package:
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hierarchicalforecast-{{ version }}.tar.gz
   sha256: 34667b08359fbeddb20c3192de604d139cef9b33155ac595ef7bc900f9436252
+  patches:
+    - pyproject.patch
 
 build:
   noarch: python
@@ -19,7 +21,6 @@ requirements:
     - python {{ python_min }}
     - pip
     - setuptools
-    - hatchling
   run:
     - python >={{ python_min }}
     - matplotlib-base
