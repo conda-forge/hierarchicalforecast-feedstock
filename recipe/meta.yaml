@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
@@ -19,14 +19,14 @@ requirements:
     - python {{ python_min }}
     - pip
     - setuptools
-    - uv
   run:
     - python >={{ python_min }}
     - matplotlib-base
+    - narwhals>=2.0
     - numba
     - numpy
     - pandas
-    - quadprog
+    - qpsolvers[clarabel]
     - scikit-learn
     - tqdm
 
