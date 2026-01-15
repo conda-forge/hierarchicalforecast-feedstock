@@ -13,7 +13,9 @@ source:
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  script:
+    - curl -sL https://raw.githubusercontent.com/Nixtla/hierarchicalforecast/v{{ version }}/LICENSE -o LICENSE || wget https://raw.githubusercontent.com/Nixtla/hierarchicalforecast/v{{ version }}/LICENSE -O LICENSE
+    - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
