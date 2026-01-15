@@ -24,11 +24,11 @@ requirements:
   run:
     - python >={{ python_min }}
     - matplotlib-base
-    - narwhals>=2.0
+    - narwhals >=2.0
     - numba
     - numpy
     - pandas
-    - qpsolvers[clarabel]
+    - qpsolvers
     - scikit-learn
     - tqdm
 
