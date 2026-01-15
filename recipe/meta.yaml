@@ -39,7 +39,7 @@ test:
 
 about:
   home: https://github.com/Nixtla/hierarchicalforecast/tree/main/
-  summary: Hierarchical Methods Time series forecasting
+  summary: Hierarchical Methods Time Series Forecasting
   license: Apache-2.0
   license_file: LICENSE
   description: |
