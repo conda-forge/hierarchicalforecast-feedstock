@@ -30,7 +30,7 @@ requirements:
     - numba
     - numpy
     - pandas
-    - qpsolvers
+    - qpsolvers[clarabel]
     - scikit-learn
     - tqdm
 
