@@ -1,0 +1,27 @@
+--- pyproject.toml.orig	2026-01-15 13:22:33
++++ pyproject.toml	2026-01-15 13:24:54
+@@ -60,13 +60,20 @@
+ ]
+ 
+ [build-system]
+-requires = ["uv_build>=0.7.19,<1.0.0"]
+-build-backend = "uv_build"
++requires = ["setuptools>=61.0", "wheel"]
++build-backend = "setuptools.build_meta"
+ 
+-[tool.uv.build-backend]
+-module-root = "."
++[tool.setuptools.dynamic]
++version = {attr = "hierarchicalforecast.__version__"}
+ 
++[tool.setuptools]
++include-package-data = true
+ 
++[tool.setuptools.packages.find]
++where = ["."]
++include = ["hierarchicalforecast*"]
++
++
+ [tool.ruff]
+ fix = true
+ indent-width = 4
