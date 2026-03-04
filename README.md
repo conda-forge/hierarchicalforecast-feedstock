@@ -7,7 +7,7 @@ Home: https://github.com/Nixtla/hierarchicalforecast/tree/main/
 
 Package license: Apache-2.0
 
-Summary: Hierarchical Methods Time series forecasting
+Summary: Hierarchical Methods Time Series Forecasting
 
 Development: https://github.com/Nixtla/hierarchicalforecast
 
@@ -167,8 +167,11 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@AzulGarza](https://github.com/AzulGarza/)
+* [@JQGoh](https://github.com/JQGoh/)
+* [@MMenchero](https://github.com/MMenchero/)
 * [@elephaint](https://github.com/elephaint/)
-* [@jmoralez](https://github.com/jmoralez/)
-* [@sugatoray](https://github.com/sugatoray/)
+* [@goodwanghan](https://github.com/goodwanghan/)
+* [@marcopeix](https://github.com/marcopeix/)
+* [@nasaul](https://github.com/nasaul/)
+* [@ngupta23](https://github.com/ngupta23/)
 
